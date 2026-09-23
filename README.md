@@ -54,8 +54,8 @@ mean-reverting price, and a cointegrated pair. Costs are 2 bps slippage plus
 | Exposure | 96% | 32% | 22% |
 | Fills | 22 | 202 | 184 |
 
-![MA crossover on synthetic trending data](docs/images/ma_crossover.png)
-![Pairs trading on a synthetic cointegrated pair](docs/images/pairs.png)
+![MA crossover on synthetic trending data](outputs/ma_crossover.png)
+![Pairs trading on a synthetic cointegrated pair](outputs/pairs.png)
 
 The flat stretch at the start of each curve is indicator warmup: 100 bars for
 the crossover, 250 + 60 for pairs. The staircase shape comes from sparse
