@@ -88,7 +88,7 @@ With `sizing="fixed"` each entry trades $1M of notional regardless of account
 growth, while buy-and-hold compounds. `sizing="equity"` gives a
 like-for-like comparison.
 
-![SPY 50/200 long-only](docs/images/spy_MovingAverageCrossover.png)
+![SPY 50/200 long-only](outputs/spy_MovingAverageCrossover.png)
 
 **QQQ z-score mean reversion.** It made money steadily from 2012 to 2018 while
 QQQ moved in choppy swings, then lost about 22% in 2020. In a strong
@@ -97,7 +97,7 @@ COVID crash too early and shorted the rebound too soon. It also paid $48,787 in
 costs at 13.5x annual turnover. The edge exists in some regimes and not others,
 which argues for a regime filter.
 
-![QQQ z-score mean reversion](docs/images/qqq_ZScoreMeanReversion.png)
+![QQQ z-score mean reversion](outputs/qqq_ZScoreMeanReversion.png)
 
 **KO/PEP pairs.** It lost about 15% from 2011 to 2013 as the spread kept
 widening and never reverted, went sideways for most of a decade, and recovered
@@ -106,7 +106,7 @@ pair and it snapped back. A track record that depends on a single extreme event
 is not an edge. The strategy assumes cointegration without testing for it, which
 is the most important gap in this version (see next steps).
 
-![KO/PEP pairs](docs/images/ko_pep_PairsTrading.png)
+![KO/PEP pairs](outputs/ko_pep_PairsTrading.png)
 
 ### Overfitting check
 
