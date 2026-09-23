@@ -40,7 +40,8 @@ def main() -> None:
             from pathlib import Path
             from backtester.plotting import plot_result
             Path("output").mkdir(exist_ok=True)
-            plot_result(ev, name, f"output/{name.split()[0].lower()}_{type(strategy).__name__}.png")
+            slug = name.split()[0].lower().replace("/", "_")
+            plot_result(ev, name, f"output/{slug}_{type(strategy).__name__}.png")
 
     spy = bt.load_yfinance(["SPY"], start=args.start, end=args.end)
     results["SPY buy & hold"] = bt.EventDrivenBacktest(spy, BuyAndHold("SPY"), costs=costs).run()
